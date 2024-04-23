@@ -82,7 +82,7 @@ for model in model_param_mapping.keys():
     sc.tl.umap(input)
     sc.tl.leiden(input, key_added="leiden_embedding")    
 
-    vae.save("Models/{}".format(model), save_anndata=True)
+    vae.save("./../../models/ETCU/{}".format(model), save_anndata=True)
     
     del vae
     del input

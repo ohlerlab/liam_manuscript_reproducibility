@@ -1,0 +1,13 @@
+r                   	4.1.2               
+r-seurat            	4.0.5               
+r-seuratdisk        	0.0.0.9019-1.163f1aa
+r-scdblfinder       	1.8.0              
+r-bsgenome-hsapiens-ucsc-hg38	1.4.1               
+lapack              	3.9.0               
+glibc-locales       	2.33               
+rstudio-server-multi-version	2021.09.0+351      
+htslib              	1.12                
+bedtools            	2.30.0              
+r-anndata           	0.7.5.3            
+r-archr             	1.0.1-1.92ab814     
+r-hexbin            	1.28.2              

@@ -1,7 +1,7 @@
 # liam_manuscript_reproducibility
 Author: Pia Rautenstrauch
 
-This repository hosts the analysis scripts, notebooks, and environment config files for reproducing the results from [[1]](#1). It also hosts intermediate data created that requires many preprocessing steps to recreate. If you merely search for an example, consider the tutorials at https://github.com/ohlerlab/liam, which hosts the software under active development.
+This Zenodo record contains scripts, notebooks, data, and environment configuration files essential for reproducing the data preprocessing, analyses, and figures presented in the "Liam tackles complex multimodal single-cell data integration challenges" peer-reviewed publication. Data preprocessing and analyses for models presented in the preprint [[1]](#1) are equivalent. It also hosts intermediate data created that requires many preprocessing steps to recreate. If you merely search for an example, consider the tutorials at https://github.com/ohlerlab/liam, which hosts the software under active development.
 
 ## Notes on analysis scripts and notebooks
 I reorganized the scripts for readability. As a result, some of the relative paths/absolute paths might be erroneous but should be recoverable from the directory structure and naming conventions. I omitted some cross-referenced files, notebooks, and analysis scripts that are not required to reproduce the paper's results.

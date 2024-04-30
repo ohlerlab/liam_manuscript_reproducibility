@@ -4,7 +4,7 @@ Author: Pia Rautenstrauch
 This Zenodo record contains scripts, notebooks, data, and environment configuration files essential for reproducing the data preprocessing, analyses, and figures presented in the "Liam tackles complex multimodal single-cell data integration challenges" peer-reviewed publication. Data preprocessing and analyses for models presented in the preprint [[1]](#1) are equivalent. It also hosts intermediate data created that requires many preprocessing steps to recreate. If you merely search for an example, consider the tutorials at https://github.com/ohlerlab/liam, which hosts the software under active development.
 
 ## Notes on analysis scripts and notebooks
-I reorganized the scripts for readability. As a result, some of the relative paths/absolute paths might be erroneous but should be recoverable from the directory structure and naming conventions. I omitted some cross-referenced files, notebooks, and analysis scripts that are not required to reproduce the paper's results.
+I reorganized the scripts/directory structure for readability. As a result, some of the relative paths/absolute paths might be erroneous but should be recoverable from the directory structure and naming conventions. I omitted some cross-referenced files, notebooks, and analysis scripts that are not required to reproduce the paper's results.
 
 ### Directory structure
 In every ```scripts/``` subfolder (TCU - treatment-control use case, ETCU - extended treatment-control use case, CU - competition use case, and CU_mosaic - mosaic use case) are:
@@ -26,16 +26,14 @@ Technically, you can recreate the input data for the TCU and ETCU use cases from
 - TCU: data/derived/Mimitou2021/DOGMA_seq/preprocessed_DOGMA.h5ad.gz
 - ETCU: data/derived/Mimitou2021/DOGMA_seq/extended_treatment_control_use_case_revisions_r1.h5ad.gz
 
-We provide intermediate outputs (embeddings) sufficient for generating publication figures for all use cases.
+```Gunzip``` these files before use.
 
-For CU and CU_mosaic: the embeddings are in respective folders ```scripts/<use_case>Predictions/```.
-
-For TCU and ETCU: the embeddings can be loaded from ```models/TCU``` and ```models/ETCU``` in models.zip.
+We provide intermediate outputs (embeddings) that are sufficient for generating publication figures for all use cases in respective folders: ```scripts/<use_case>/Predictions/```.
 
 ## Notes on different liam versions
 For software from the publication under active development, see https://github.com/ohlerlab/liam.
 
-For the legacy version of the software used in the presented scripts, see https://github.com/ohlerlab/liam_challenge_reproducibility. We performed the presented analyses with different versions of the legacy software. For details, see the GitHub repos release notes and the ```environments/``` README. All added functionality is theoretically downward compatible (except for a bug of the mosaic functionality, breaking single-modality models). Version v0.1.1 of [liam](https://github.com/ohlerlab/liam) under active development comprises all functionalities and a downward compatible bug fix of the mosaic functionality. Running liam v0.1.1 will thus result in equivalent results, as obtained with the distinct liam_challenge_reproducibility releases.
+For the legacy version of the software used in the presented scripts, see https://github.com/ohlerlab/liam_challenge_reproducibility. We performed the presented analyses with different versions of the legacy software. For details, see the GitHub repos release notes and the ```environments/``` README. All added functionality is theoretically downward compatible (except for a bug of the mosaic functionality, breaking single-modality models). Version v0.1.1 of [liam](https://github.com/ohlerlab/liam) under active development comprises all functionalities and a downward compatible bug fix of the mosaic functionality. Running liam v0.1.1 will thus result in equivalent results as obtained with the distinct liam_challenge_reproducibility releases.
 
 ## References
 <a id="1">[1]</a>
